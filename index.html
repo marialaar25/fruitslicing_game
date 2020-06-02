@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- base jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jquery UI -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <title>Fruit Slice Game</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="score">
+            Score: <span id="scoreValue"></span>
+        </div>
+        <div id="trials-left">
+        </div>
+        
+        <div id="fruitContainer">
+            <!-- add a src with jquery -->
+            <img id="fruit1" class="fruit">
+        </div>
+        <div id="instruction">Catch all the fruits!</div>
+        
+        <div id="start-reset">Start Game
+        </div>
+      
+        <div id="gameOver">
+        </div>
+        
+    </div>
+    <audio src="audio/swordswoosh.mp3" id="sliceSound"></audio>
+
+    <script src="jquery.js"></script>
+</body>
+</html>

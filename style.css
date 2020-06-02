@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+html {
+    height: 100%;
+    background: radial-gradient(circle, white, blue);
+    background: -webkit-radial-gradient(circle, white, blue);
+    background: -moz-radial-gradient(circle, white, blue);
+    background: -o-radial-gradient(circle, white, blue);
+}
+
+.main-container {
+    height: 95vh;
+    width: 60vw;
+    background-color: white;
+    margin: 1rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 100px 20px black;
+    position: relative;
+}
+
+.score {
+    background-color: blue;
+    color: white;
+    padding: 1rem;
+    position: absolute;
+    left: 52vw;
+    box-shadow: 1px 2px 2px 2px black;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    font-size: 25px;
+}
+
+#fruitContainer {
+    height: 50vh;
+    width: 50vw;
+    background-color: white;
+    margin: 5rem auto 0.5rem auto;
+    box-shadow: 1px 2px 2px 2px black;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.fruit {
+    display: none;
+    position: absolute;
+}
+
+#instruction {
+    width: 50vw;
+    height: 8vh;
+    background-color: lightblue;
+    box-shadow: 1px 2px 2px 2px black;
+    margin: 1rem auto 1rem auto;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+#start-reset {
+    width: 10rem;
+    background-color: lightgreen;
+    margin: 0rem auto;
+    padding: 1rem;
+    box-shadow: 1px 2px 2px 2px black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.2s;
+}
+
+#start-reset:hover {
+    background-color: green;
+    box-shadow: 1px 2px 2px 2px black;
+    color: white;
+    
+}
+
+#start-reset:active {
+    box-shadow: 0px 0px 0px 0px rgb(26, 89, 109);
+}
+
+#trials-left {
+    width: auto;
+    padding: 1rem;
+    position: absolute;
+    background-color: lightblue;
+    box-shadow: 1px 2px 2px 2px black;
+    border-radius: 2px;
+    display: none;
+}
+
+.heart {
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#gameOver {
+    height: 45vh;
+    width: 40vw;
+    background: linear-gradient(lightgreen, blue);
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 0.2rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 18vh;
+    left: 10vw;
+    box-shadow: 1px 2px 20px 2px black;
+    z-index: 2;
+    display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1400px) {
+    div.score {
+        left: 45vw;
+    }
+ }
+ 
+ @media only screen and (max-width: 800px) {
+     div.score {
+         left: 35vw;
+     }
+     div#gameOver {
+         font-size: 2.5rem;
+     }
+ }
+ 
+ @media only screen and (max-width: 700px) {
+    div.main-container {
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    div#gameOver {
+        left: 6vw;
+        width: 80vw;
+    }
+    div#fruitContainer {
+     width: 80vw;
+     left: 1vw;
+    }
+    div.heart {
+        width: 20px;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+    div#trials-left {
+        padding: 0;
+    }
+    div.score {
+        padding: 0;
+        left: 54vw;
+    }
+    #instruction {
+        width: 100%;
+    }
+ }
